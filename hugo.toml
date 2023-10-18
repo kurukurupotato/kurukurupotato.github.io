@@ -4,5 +4,7 @@ title = 'kurupota site'
 
 theme = "beautifulhugo"
 
+publishDir = "docs"
+
 [params]
  subtitle = "そこら辺のPCゲーマーの日常"

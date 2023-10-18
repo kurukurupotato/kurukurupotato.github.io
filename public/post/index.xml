@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on kurupota site</title>
+    <link>https://example.org/post/</link>
+    <description>Recent content in Posts on kurupota site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Oct 2023 22:19:35 +0900</lastBuildDate><atom:link href="https://example.org/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>自己紹介</title>
+      <link>https://example.org/post/first-post/</link>
+      <pubDate>Sun, 15 Oct 2023 22:19:35 +0900</pubDate>
+      
+      <guid>https://example.org/post/first-post/</guid>
+      <description>&lt;p&gt;FPSが好きな、ただのPCゲーマーです。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
