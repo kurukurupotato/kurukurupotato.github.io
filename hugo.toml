@@ -1,4 +1,4 @@
-baseURL = 'https://kurukurupotato.github.io/'
+baseURL = 'https://kurukurupotato.github.io'
 languageCode = 'en-us'
 title = 'kurupota site'
 
@@ -8,3 +8,52 @@ publishDir = "docs"
 
 [params]
  subtitle = "そこら辺のPCゲーマーの日常"
+
+[[social_icons]]
+ id = "github"
+ url = "https://github.com/kurukurupotato"
+ title = "GitHub"
+ icon = "fab fa-github"
+
+[Author]
+  # Set only your "username" for default hosts and full URLs otherwise (e.g., "https://MyGitLab.org/username")
+  name = "kurukurupotato"
+  github = "kurukurupotato"
+
+[[menu.main]]
+    name = "Blog"
+    url = ""
+    weight = 1
+
+[[menu.main]]
+    name = "About"
+    url = "page/about/"
+    weight = 3
+
+[[menu.main]]
+    identifier = "Introduction"
+    name = "Introduction"
+    weight = 2
+
+[[menu.main]]
+    parent = "Introduction"
+    name = "Me"
+    url = "post/first-post"
+    weight = 1
+
+[[menu.main]]
+    parent = "Introduction"
+    name = "PC"
+    url = "post/main-pc-introduction"
+    weight = 2
+
+[[menu.main]]
+    parent = "Introduction"
+    name = "Server"
+    url = "post/server-introduction"
+    weight = 3
+
+[[menu.main]]
+    name = "Tags"
+    url = "tags"
+    weight = 3

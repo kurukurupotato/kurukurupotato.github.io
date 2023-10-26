@@ -6,9 +6,27 @@
     <description>Recent content in Posts on kurupota site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Oct 2023 22:19:35 +0900</lastBuildDate><atom:link href="https://kurukurupotato.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Oct 2023 13:39:10 +0900</lastBuildDate><atom:link href="https://kurukurupotato.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>自己紹介</title>
+      <title>Server Introduction</title>
+      <link>https://kurukurupotato.github.io/post/server-introduction/</link>
+      <pubDate>Thu, 19 Oct 2023 13:39:10 +0900</pubDate>
+      
+      <guid>https://kurukurupotato.github.io/post/server-introduction/</guid>
+      <description>&lt;p&gt;私が運用しているサーバー(にむえ鯖)を紹介します。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Main PC Introduction</title>
+      <link>https://kurukurupotato.github.io/post/main-pc-introduction/</link>
+      <pubDate>Thu, 19 Oct 2023 13:08:10 +0900</pubDate>
+      
+      <guid>https://kurukurupotato.github.io/post/main-pc-introduction/</guid>
+      <description>&lt;p&gt;私がメインで使用しているPCを紹介します。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Self Introduction</title>
       <link>https://kurukurupotato.github.io/post/first-post/</link>
       <pubDate>Sun, 15 Oct 2023 22:19:35 +0900</pubDate>
       
