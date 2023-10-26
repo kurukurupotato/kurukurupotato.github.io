@@ -7,7 +7,15 @@ theme = "beautifulhugo"
 publishDir = "docs"
 
 [params]
- subtitle = "そこら辺のPCゲーマーの日常"
+    subtitle = "そこら辺のPCゲーマーの日常"
+    favicon = "img/logo/favicon.ico"
+    comments = true
+    socialShare = true
+    delayDisqus = true
+    showRelatedPosts = true
+
+
+
 
 [[social_icons]]
  id = "github"
@@ -16,9 +24,10 @@ publishDir = "docs"
  icon = "fab fa-github"
 
 [Author]
-  # Set only your "username" for default hosts and full URLs otherwise (e.g., "https://MyGitLab.org/username")
-  name = "kurukurupotato"
-  github = "kurukurupotato"
+    # Set only your "username" for default hosts and full URLs otherwise (e.g., "https://MyGitLab.org/username")
+    name = "kurukurupotato"
+    twitter = "kurukurupotato"
+    github = "kurukurupotato"
 
 [[menu.main]]
     name = "Blog"

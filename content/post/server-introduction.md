@@ -1,5 +1,5 @@
 +++
-title = 'Server Introduction'
+title = '自宅サーバーの紹介'
 date = 2023-10-19T13:39:10+09:00
 draft = false
 tags = ["紹介", "サーバー"]

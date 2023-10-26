@@ -1,5 +1,5 @@
 +++
-title = 'Main PC Introduction'
+title = 'メインPCの紹介'
 date = 2023-10-19T13:08:10+09:00
 draft = false
 tags = ["紹介", "PC"]
