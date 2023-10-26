@@ -2,6 +2,7 @@
 title = 'Self Introduction'
 date = 2023-10-15T22:19:35+09:00
 draft = false
+tags = ["紹介"]
 +++
 
 FPSが好きな、ただのPCゲーマーです。

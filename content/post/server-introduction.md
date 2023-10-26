@@ -2,6 +2,7 @@
 title = 'Server Introduction'
 date = 2023-10-19T13:39:10+09:00
 draft = false
+tags = ["紹介", "サーバー"]
 +++
 
 私が運用しているサーバー(にむえ鯖)を紹介します。

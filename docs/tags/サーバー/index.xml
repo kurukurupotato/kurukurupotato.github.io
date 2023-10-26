@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>サーバー on kurupota site</title>
+    <link>https://kurukurupotato.github.io/tags/%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/</link>
+    <description>Recent content in サーバー on kurupota site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Oct 2023 12:56:24 +0900</lastBuildDate><atom:link href="https://kurukurupotato.github.io/tags/%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>自宅サーバーをsshでリモートアクセスできるようにした話</title>
+      <link>https://kurukurupotato.github.io/post/server-ssh/</link>
+      <pubDate>Thu, 26 Oct 2023 12:56:24 +0900</pubDate>
+      
+      <guid>https://kurukurupotato.github.io/post/server-ssh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Server Introduction</title>
+      <link>https://kurukurupotato.github.io/post/server-introduction/</link>
+      <pubDate>Thu, 19 Oct 2023 13:39:10 +0900</pubDate>
+      
+      <guid>https://kurukurupotato.github.io/post/server-introduction/</guid>
+      <description>&lt;p&gt;私が運用しているサーバー(にむえ鯖)を紹介します。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

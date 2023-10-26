@@ -10,9 +10,8 @@
  
 
 
-      <title>Self Introduction - </title>
+      <title>自宅サーバーをsshでリモートアクセスできるようにした話 - </title>
 
-  <meta name="description" content="FPSが好きな、ただのPCゲーマーです。">
   <meta name="author" content="kurukurupotato"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -48,8 +47,8 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https:\/\/kurukurupotato.github.io\/post\/first-post\/",
-          "name": "Self introduction"
+          "@id": "https:\/\/kurukurupotato.github.io\/post\/server-ssh\/",
+          "name": "自宅サーバーをsshでリモートアクセスできるようにした話"
         }
     }]
 }
@@ -60,15 +59,15 @@
   "author": {
     "name" : "kurukurupotato"
   },
-  "headline": "Self Introduction",
-  "description" : "FPSが好きな、ただのPCゲーマーです。\n",
+  "headline": "自宅サーバーをsshでリモートアクセスできるようにした話",
+  "description" : "",
   "inLanguage" : "en",
-  "wordCount":  17 ,
-  "datePublished" : "2023-10-15T22:19:35",
-  "dateModified" : "2023-10-15T22:19:35",
+  "wordCount":  42 ,
+  "datePublished" : "2023-10-26T12:56:24",
+  "dateModified" : "2023-10-26T12:56:24",
   "image" : "https:\/\/kurukurupotato.github.io",
-  "keywords" : [ "紹介" ],
-  "mainEntityOfPage" : "https:\/\/kurukurupotato.github.io\/post\/first-post\/",
+  "keywords" : [ "サーバー, ssh" ],
+  "mainEntityOfPage" : "https:\/\/kurukurupotato.github.io\/post\/server-ssh\/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https:\/\/kurukurupotato.github.io",
@@ -82,14 +81,12 @@
 }
 </script>
 
-<meta property="og:title" content="Self Introduction" />
-<meta property="og:description" content="FPSが好きな、ただのPCゲーマーです。">
-<meta property="og:url" content="https://kurukurupotato.github.io/post/first-post/" />
+<meta property="og:title" content="自宅サーバーをsshでリモートアクセスできるようにした話" />
+<meta property="og:url" content="https://kurukurupotato.github.io/post/server-ssh/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="kurupota site" />
 
-  <meta name="twitter:title" content="Self Introduction" />
-  <meta name="twitter:description" content="FPSが好きな、ただのPCゲーマーです。">
+  <meta name="twitter:title" content="自宅サーバーをsshでリモートアクセスできるようにした話" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="generator" content="Hugo 0.119.0">
   <link rel="alternate" href="https://kurukurupotato.github.io/index.xml" type="application/rss+xml" title="kurupota site"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
@@ -231,7 +228,7 @@
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
               
-                <h1>Self Introduction</h1>
+                <h1>自宅サーバーをsshでリモートアクセスできるようにした話</h1>
               
               
               
@@ -239,13 +236,15 @@
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on October 15, 2023
+  <i class="fas fa-calendar"></i>&nbsp;Posted on October 26, 2023
   
   
   
   
     
-      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;kurukurupotato
+      
+        &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;kurukurupotato
+      
     
   
   
@@ -267,28 +266,41 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>FPSが好きな、ただのPCゲーマーです。</p>
-<p>これまでプレイしてきたFPSゲームはこんな感じ。</p>
-<ul>
-<li>Sudden Attack</li>
-<li>PUBG</li>
-<li>APEX LEGENDS</li>
-<li>VALORANT</li>
-<li>Escape from Tarkov</li>
-</ul>
-<p>FPS以外のゲーム。</p>
-<ul>
-<li>Minecraft</li>
-<li>機動戦士ガンダムオンライン(TPS)</li>
-<li>Splatoon2,3(TPS)</li>
-</ul>
-<p>現在はエスケーパーとしてタルコフにどハマり中。もはや囚われている…？</p>
-<p>FPSを全力で愛しています。</p>
+        <h1 id="事の発端">事の発端</h1>
+<p>以前から、GUIのubuntuを導入しているpcをサーバーがわりに使用していたのですが、何気なくCUIのubuntu-serverを構築したいと思い立ったのが始まりでした。</p>
+<h1 id="server環境の構築">server環境の構築</h1>
+<p>serverの構築自体はすんなりと進みました。ubuntu-serverのISOファイルを入れたUSBメモリからブートに成功。その後、画面に従ってぽちぽちしているだけでOSのインストールが完了しました。（この時点ではネットワーク設定は触れていません！）</p>
+<h1 id="ipアドレスの固定等のネットワーク設定">IPアドレスの固定等のネットワーク設定</h1>
+<p>ubuntuは<code>etc/netplan</code>内にある<code>yamlファイル</code>を編集してネットワーク設定を行います。</p>
+<pre tabindex="0"><code>network:
+  version: 2
+  ethernets:
+    イーサネットインターフェース名:
+      dhcp4: false
+      dhcp6: false
+      addresses: [固定するIPアドレス]
+      gateway4: デフォルトゲートウェイのアドレス
+      nameservers:
+        addresses: [DNSアドレス]
+</code></pre><p>今回はIPアドレスを固定するため、<code>dhcp4</code>と<code>dhcp6</code>はfalseに、残りのアドレスは適宜設定していきます。
+この時、<code>yamlファイル</code>の書き込み権限を付与するのを忘れて2~3回vimで入力し直しました。（あほ）</p>
+<h1 id="sshの設定">sshの設定</h1>
+<p>IPアドレスの固定ができたので、次はsshの設定をしていきます。
+OSインストールの際にsshはインストール済みなので、早速鍵を作っていきます。</p>
+<pre tabindex="0"><code>$ ssh-keygen -t rsa
+</code></pre><p>上記コマンド実行後、<code>~/.ssh</code>上に秘密鍵の<code>id_rsa</code>と公開鍵の<code>id_rsa.pub</code>が作成されます。
+その後、秘密鍵の方を接続元のMacBook Airに、USBメモリを用いて転送。適当な場所に秘密鍵を格納し、sshのconfigを編集してサーバーにsshできるよう設定しました。この時、接続元にある秘密鍵のパーミッションが適切でなかったため、サーバーに接続するためにパスワードを求められてしまいました。</p>
+<pre tabindex="0"><code>$ sudo chmod 600 ~/.ssh/秘密鍵の名前(今回の場合id_rsa)
+</code></pre><p>上記のコマンドでパーミッションを適切に設定し、サーバーにssh接続することに成功しました。</p>
+<h1 id="今後の展望">今後の展望</h1>
+<p>今回はsshのconfigにプライベートIPアドレスを設定しssh接続を行なったため、自宅LAN内でしかsshできない状態になっています。今後は外出先で自宅サーバーにsshできるようにしたいので、グローバルIPアドレスやポートフォワーディングなどの知識を深めて再挑戦したいと思います。</p>
 
         
           <div class="blog-tags">
             
-              <a href="https://kurukurupotato.github.io/tags/%E7%B4%B9%E4%BB%8B/">紹介</a>&nbsp;
+              <a href="https://kurukurupotato.github.io/tags/%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/">サーバー</a>&nbsp;
+            
+              <a href="https://kurukurupotato.github.io/tags/ssh/">ssh</a>&nbsp;
             
           </div>
         
@@ -301,10 +313,10 @@
       
         <ul class="pager blog-pager">
           
-          
-            <li class="next">
-              <a href="https://kurukurupotato.github.io/post/main-pc-introduction/" data-toggle="tooltip" data-placement="top" title="Main PC Introduction">Next Post &rarr;</a>
+            <li class="previous">
+              <a href="https://kurukurupotato.github.io/post/ssh-agent/" data-toggle="tooltip" data-placement="top" title="ssh-agentの使い方">&larr; Previous Post</a>
             </li>
+          
           
         </ul>
       

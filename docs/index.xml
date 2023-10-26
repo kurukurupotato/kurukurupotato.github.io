@@ -6,7 +6,34 @@
     <description>Recent content on kurupota site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Oct 2023 13:39:10 +0900</lastBuildDate><atom:link href="https://kurukurupotato.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Oct 2023 13:42:17 +0900</lastBuildDate><atom:link href="https://kurukurupotato.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://kurukurupotato.github.io/page/about/about/</link>
+      <pubDate>Thu, 26 Oct 2023 13:42:17 +0900</pubDate>
+      
+      <guid>https://kurukurupotato.github.io/page/about/about/</guid>
+      <description>FPSが好きな、ただのPCゲーマーです。</description>
+    </item>
+    
+    <item>
+      <title>自宅サーバーをsshでリモートアクセスできるようにした話</title>
+      <link>https://kurukurupotato.github.io/post/server-ssh/</link>
+      <pubDate>Thu, 26 Oct 2023 12:56:24 +0900</pubDate>
+      
+      <guid>https://kurukurupotato.github.io/post/server-ssh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ssh-agentの使い方</title>
+      <link>https://kurukurupotato.github.io/post/ssh-agent/</link>
+      <pubDate>Thu, 26 Oct 2023 12:32:45 +0900</pubDate>
+      
+      <guid>https://kurukurupotato.github.io/post/ssh-agent/</guid>
+      <description>&lt;p&gt;Githubにpushする際、ssh-agentの使い方で躓いたのでメモがわりに。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Server Introduction</title>
       <link>https://kurukurupotato.github.io/post/server-introduction/</link>

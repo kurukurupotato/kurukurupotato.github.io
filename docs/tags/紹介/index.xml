@@ -1,30 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on kurupota site</title>
-    <link>https://kurukurupotato.github.io/post/</link>
-    <description>Recent content in Posts on kurupota site</description>
+    <title>紹介 on kurupota site</title>
+    <link>https://kurukurupotato.github.io/tags/%E7%B4%B9%E4%BB%8B/</link>
+    <description>Recent content in 紹介 on kurupota site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Oct 2023 12:56:24 +0900</lastBuildDate><atom:link href="https://kurukurupotato.github.io/post/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>自宅サーバーをsshでリモートアクセスできるようにした話</title>
-      <link>https://kurukurupotato.github.io/post/server-ssh/</link>
-      <pubDate>Thu, 26 Oct 2023 12:56:24 +0900</pubDate>
-      
-      <guid>https://kurukurupotato.github.io/post/server-ssh/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ssh-agentの使い方</title>
-      <link>https://kurukurupotato.github.io/post/ssh-agent/</link>
-      <pubDate>Thu, 26 Oct 2023 12:32:45 +0900</pubDate>
-      
-      <guid>https://kurukurupotato.github.io/post/ssh-agent/</guid>
-      <description>&lt;p&gt;Githubにpushする際、ssh-agentの使い方で躓いたのでメモがわりに。&lt;/p&gt;</description>
-    </item>
-    
+    <lastBuildDate>Thu, 19 Oct 2023 13:39:10 +0900</lastBuildDate><atom:link href="https://kurukurupotato.github.io/tags/%E7%B4%B9%E4%BB%8B/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Server Introduction</title>
       <link>https://kurukurupotato.github.io/post/server-introduction/</link>

@@ -10,9 +10,9 @@
  
 
 
-      <title>Self Introduction - </title>
+      <title>ssh-agentの使い方 - </title>
 
-  <meta name="description" content="FPSが好きな、ただのPCゲーマーです。">
+  <meta name="description" content="Githubにpushする際、ssh-agentの使い方で躓いたのでメモがわりに。">
   <meta name="author" content="kurukurupotato"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -48,8 +48,8 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https:\/\/kurukurupotato.github.io\/post\/first-post\/",
-          "name": "Self introduction"
+          "@id": "https:\/\/kurukurupotato.github.io\/post\/ssh-agent\/",
+          "name": "SSH agentの使い方"
         }
     }]
 }
@@ -60,15 +60,15 @@
   "author": {
     "name" : "kurukurupotato"
   },
-  "headline": "Self Introduction",
-  "description" : "FPSが好きな、ただのPCゲーマーです。\n",
+  "headline": "ssh-agentの使い方",
+  "description" : "Githubにpushする際、ssh-agentの使い方で躓いたのでメモがわりに。\n",
   "inLanguage" : "en",
-  "wordCount":  17 ,
-  "datePublished" : "2023-10-15T22:19:35",
-  "dateModified" : "2023-10-15T22:19:35",
+  "wordCount":  20 ,
+  "datePublished" : "2023-10-26T12:32:45",
+  "dateModified" : "2023-10-26T12:32:45",
   "image" : "https:\/\/kurukurupotato.github.io",
-  "keywords" : [ "紹介" ],
-  "mainEntityOfPage" : "https:\/\/kurukurupotato.github.io\/post\/first-post\/",
+  "keywords" : [ "ssh" ],
+  "mainEntityOfPage" : "https:\/\/kurukurupotato.github.io\/post\/ssh-agent\/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https:\/\/kurukurupotato.github.io",
@@ -82,14 +82,14 @@
 }
 </script>
 
-<meta property="og:title" content="Self Introduction" />
-<meta property="og:description" content="FPSが好きな、ただのPCゲーマーです。">
-<meta property="og:url" content="https://kurukurupotato.github.io/post/first-post/" />
+<meta property="og:title" content="ssh-agentの使い方" />
+<meta property="og:description" content="Githubにpushする際、ssh-agentの使い方で躓いたのでメモがわりに。">
+<meta property="og:url" content="https://kurukurupotato.github.io/post/ssh-agent/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="kurupota site" />
 
-  <meta name="twitter:title" content="Self Introduction" />
-  <meta name="twitter:description" content="FPSが好きな、ただのPCゲーマーです。">
+  <meta name="twitter:title" content="ssh-agentの使い方" />
+  <meta name="twitter:description" content="Githubにpushする際、ssh-agentの使い方で躓いたのでメモがわりに。">
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="generator" content="Hugo 0.119.0">
   <link rel="alternate" href="https://kurukurupotato.github.io/index.xml" type="application/rss+xml" title="kurupota site"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
@@ -231,7 +231,7 @@
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
               
-                <h1>Self Introduction</h1>
+                <h1>ssh-agentの使い方</h1>
               
               
               
@@ -239,7 +239,7 @@
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on October 15, 2023
+  <i class="fas fa-calendar"></i>&nbsp;Posted on October 26, 2023
   
   
   
@@ -267,28 +267,23 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>FPSが好きな、ただのPCゲーマーです。</p>
-<p>これまでプレイしてきたFPSゲームはこんな感じ。</p>
-<ul>
-<li>Sudden Attack</li>
-<li>PUBG</li>
-<li>APEX LEGENDS</li>
-<li>VALORANT</li>
-<li>Escape from Tarkov</li>
-</ul>
-<p>FPS以外のゲーム。</p>
-<ul>
-<li>Minecraft</li>
-<li>機動戦士ガンダムオンライン(TPS)</li>
-<li>Splatoon2,3(TPS)</li>
-</ul>
-<p>現在はエスケーパーとしてタルコフにどハマり中。もはや囚われている…？</p>
-<p>FPSを全力で愛しています。</p>
+        <p>Githubにpushする際、ssh-agentの使い方で躓いたのでメモがわりに。</p>
+<h2 id="ssh-agentの起動">ssh-agentの起動</h2>
+<pre tabindex="0"><code>$ eval `ssh-agent`
+</code></pre><h2 id="ssh-agentの停止">ssh-agentの停止</h2>
+<pre tabindex="0"><code>$ ssh-agent -k
+</code></pre><h2 id="ssh-addの使い方">ssh-addの使い方</h2>
+<pre tabindex="0"><code>ssh-add [秘密鍵のパス]
+</code></pre><p>秘密鍵をssh-agentに登録。</p>
+<pre tabindex="0"><code>ssh-add -L
+</code></pre><p>登録されている鍵の公開鍵一覧を表示。</p>
+<pre tabindex="0"><code>ssh-add -d [秘密鍵のパス]
+</code></pre><p>登録されている鍵を削除。</p>
 
         
           <div class="blog-tags">
             
-              <a href="https://kurukurupotato.github.io/tags/%E7%B4%B9%E4%BB%8B/">紹介</a>&nbsp;
+              <a href="https://kurukurupotato.github.io/tags/ssh/">ssh</a>&nbsp;
             
           </div>
         
@@ -301,9 +296,13 @@
       
         <ul class="pager blog-pager">
           
+            <li class="previous">
+              <a href="https://kurukurupotato.github.io/post/server-introduction/" data-toggle="tooltip" data-placement="top" title="Server Introduction">&larr; Previous Post</a>
+            </li>
+          
           
             <li class="next">
-              <a href="https://kurukurupotato.github.io/post/main-pc-introduction/" data-toggle="tooltip" data-placement="top" title="Main PC Introduction">Next Post &rarr;</a>
+              <a href="https://kurukurupotato.github.io/post/server-ssh/" data-toggle="tooltip" data-placement="top" title="自宅サーバーをsshでリモートアクセスできるようにした話">Next Post &rarr;</a>
             </li>
           
         </ul>
